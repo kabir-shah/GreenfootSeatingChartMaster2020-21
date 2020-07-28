@@ -6,8 +6,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Classroom here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Oleg Bychenkov (your name) 
+ * @1.0 (a version number or a date)
  */
 public class Classroom extends World
 {
