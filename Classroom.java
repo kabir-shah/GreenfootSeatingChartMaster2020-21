@@ -39,8 +39,10 @@ public class Classroom extends World
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
          
-        
-
+        /*Shreya Chandra*/
+        ShreyaChandra shreyachandra = new ShreyaChandra("Shreya", "Chandra", 1, 2);
+        addObject(shreyachandra, 1, 2);
+        shreyachandra.sitDown();
 
     }  
 }
