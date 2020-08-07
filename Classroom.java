@@ -38,7 +38,15 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
-         
+        
+        EllaDeGuzman elladeguzman = new EllaDeGuzman("Ella", "DeGuzman", 1, 2);
+        addObject(elladeguzman, 1, 1);
+        elladeguzman.sitDown();
+        
+        WhiteBoard_Ella board = new WhiteBoard_Ella();
+    //    addObject(board, board.getXloc(),board.getYloc());  // The whiteboard should be added last so that it is on tap of
+                                                            // other images.
+        addObject(board, 5,3); 
         
 
 
