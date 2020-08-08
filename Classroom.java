@@ -1,6 +1,8 @@
 import java.util.*;
 import greenfoot.*;
 import java.util.ArrayList;
+import java.awt.Desktop;
+import java.net.URI;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
@@ -35,9 +37,11 @@ public class Classroom extends World
         // Make sure to match your first and last name to the class file you created.
 
         /* Example */
-        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
-        addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();
+        ArinManohar arinmanohar = new ArinManohar("Arin", "Manohar", 1, 1);
+        addObject(arinmanohar, 1, 1);
+        
+        arinmanohar.sitDown();
+       
          
         
 
