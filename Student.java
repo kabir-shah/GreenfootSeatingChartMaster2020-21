@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Write a description of class Student here.
+ * This class contains the animation for the student when the user runs the
+ * program
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Kaushik Pendiyala 
+ * Version 1.0
+ * August 7, 2020
  */
 public abstract class Student extends Actor
 {
@@ -21,7 +23,7 @@ public abstract class Student extends Actor
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
-   public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
+   public String soundFile; //firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
    public void setRow(int r){
        myRow=r;

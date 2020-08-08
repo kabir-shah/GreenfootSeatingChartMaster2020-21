@@ -3,11 +3,13 @@ import java.awt.Desktop;
 import java.net.URI;
 
 /**
- * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The KaushikPendiyala class represents me and my seating location in the 
+ * AP CSA classroom along with my animation and lesson
  * 
- * @author Mr. Kaehms
+ * @author Mr. Kaehms and Kaushik Pendiyala
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
+ * @version 4.0 August 7, 2020
  */
 public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
 {
@@ -54,7 +56,7 @@ public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
     }
     
      /**
-     * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
+     * Act - do whatever the KaushikPendiyala actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -83,7 +85,8 @@ public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
     } 
     
     /**
-     * Prints the first and last name to the console
+     * Prints the first and last name to the console, which in this case
+     * is Kaushik Pendiyala
      */
     public void getName(){
         System.out.println("My name is " + firstName + " " + lastName);
@@ -93,6 +96,8 @@ public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
      * some mechanism that allows the student to sit down once the Q&A session ends.  You can use this basic model, or come up
      * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
      * classes, make sure to fully document so other students can use the same interface.
+     * 
+     * This method opens a youtube link to the lesson in a new brower
      */
     public void provideLesson(){
         while (! sitting) {
@@ -123,6 +128,9 @@ public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
     /**
      * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
+     * 
+     * This sets the position of the kaushikpendiyala.standing image every 
+     * second. I randomized the movement and rotated the image every act.
      */
     public void circleClass(){
         setLocation(0,0);
@@ -158,10 +166,15 @@ public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
      * tests on abstract classes and interfaces, but it is good to know about them
+     * myHobby prints out what I like to do, which is playing video games
      */
      public void myHobby(String s) {
          System.out.println(s);
 }
+    /**
+     * NumberOfSiblings prints out the number of sibling that I have, which is
+     * one
+     */
     public void NumberOfSiblings(String s) {
          System.out.println(s);
 }

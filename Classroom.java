@@ -4,10 +4,11 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
- * Write a description of class Classroom here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * This is the world where the student, Kaushik Pendiyala will reside in and 
+ * perform their animations and present their lessons (Strings)
+ * Kaushik Pendiyala 
+ * Version 1.0
+ * August 7, 2020
  */
 public class Classroom extends World
 {
