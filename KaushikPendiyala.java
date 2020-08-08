@@ -1,4 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.awt.Desktop;
+import java.net.URI;
 
 /**
  * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
@@ -7,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class KilgoreTrout extends Student implements SpecialInterestOrHobby
+public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
 {
 
     /**
@@ -22,7 +24,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public KilgoreTrout(String f, String l, int r, int s) {
+    public KaushikPendiyala(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         myRow=r;
@@ -38,9 +40,9 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public KilgoreTrout() {
-        firstName="Kilgore";
-        lastName="Trout";
+    public KaushikPendiyala() {
+        firstName="Kaushik";
+        lastName="Pendiyala";
         myRow=1;
         mySeat=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
@@ -66,7 +68,9 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play video games");
+                NumberOfSiblings("I have 1 sister who is 10 years old");
+              
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -92,16 +96,16 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      */
     public void provideLesson(){
         while (! sitting) {
+            
         String q=Greenfoot.ask("Are you ready to start (yes/no)");
         if (q.contains("yes")){
-         // put in your lesson here - you can open up a browser for a screencast
-         // Create a blackboard image and write to it, etc
-         // Use an animated gif and dub over with audio - see "controls/show sound recoder"
-         // from main greenfoot menu for a simple to use soud editor
-        
-         
-        // You can end the lesson and "sitDown" once the lesson is complete, or once
-        // someone answers "yes" to the sitdown question
+        try {
+            Desktop desktop = java.awt.Desktop.getDesktop();
+            URI oURL = new URI("https://www.youtube.com/watch?v=FwiyK9Z5SMI");
+            desktop.browse(oURL);
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         else {
           q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
@@ -125,22 +129,26 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
          Greenfoot.delay(10);
         // move right
         for (int i=1;i<=9;i++){
-            setLocation(i,0);
+            setLocation(2^i,0);
+            turn(30);
             Greenfoot.delay(10);
         }
         // move back
         for (int i=1;i<=5;i++){
-            setLocation(9,i);
+            setLocation(9,2^i);
+            turn(30);
             Greenfoot.delay(10);
         }      
          // move left
         for (int i=9;i>=0;i--){
-            setLocation(i,5);
+            setLocation(2^i,5);
+            turn(30);
             Greenfoot.delay(10);
         }      
               // move Forward
         for (int i=5;i>=0;i--){
             setLocation(0,i);
+            turn(60);
             Greenfoot.delay(10);
         }   
            Greenfoot.delay(20);
@@ -152,6 +160,9 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * tests on abstract classes and interfaces, but it is good to know about them
      */
      public void myHobby(String s) {
+         System.out.println(s);
+}
+    public void NumberOfSiblings(String s) {
          System.out.println(s);
 }
 
