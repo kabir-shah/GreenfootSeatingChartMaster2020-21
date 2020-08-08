@@ -69,7 +69,7 @@ public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
                 sayName(soundFile);
             
                 myHobby("I like to play video games");
-                NumberOfSiblings("I have 1 sister who is 10 years old");
+                NumberOfSiblings("I have one sister who is 10 years old");
               
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
@@ -129,27 +129,27 @@ public class KaushikPendiyala extends Student implements SpecialInterestOrHobby
          Greenfoot.delay(10);
         // move right
         for (int i=1;i<=9;i++){
-            setLocation(2^i,0);
+            setLocation(2^i,0+i);
             turn(30);
-            Greenfoot.delay(10);
+            Greenfoot.delay(3);
         }
         // move back
         for (int i=1;i<=5;i++){
-            setLocation(9,2^i);
+            setLocation(9-i,2^i);
             turn(30);
-            Greenfoot.delay(10);
+            Greenfoot.delay(3);
         }      
          // move left
         for (int i=9;i>=0;i--){
-            setLocation(2^i,5);
+            setLocation(2^i,5-i/2);
             turn(30);
-            Greenfoot.delay(10);
+            Greenfoot.delay(3);
         }      
               // move Forward
         for (int i=5;i>=0;i--){
             setLocation(0,i);
             turn(60);
-            Greenfoot.delay(10);
+            Greenfoot.delay(3);
         }   
            Greenfoot.delay(20);
            returnToSeat();
