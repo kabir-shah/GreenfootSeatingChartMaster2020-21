@@ -1,31 +1,34 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
-/**
- * Write a description of class Student here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public abstract class Student extends Actor
+   /**
+    * Write a description of class Student here.
+    * 
+    * @author (your name) 
+    * @version (a version number or a date)
+    */
+    public abstract class Student extends Actor
 {
-   //Instance variables
-   public String firstName;
-   public String lastName;
-   public int myRow;         // rows start in the front of class (1), and end in the back of class
-   public int mySeat;        // seats are left to right, 1-8
-   public boolean isActive;  // can you think of an algorithm that would allow you to use this
+     //Instance variables
+    public String firstName;
+    public String lastName;
+    public int myRow;         // rows start in the front of class (1), and end in the back of class
+    public int mySeat;        // seats are left to right, 1-8
+    public boolean isActive;  // can you think of an algorithm that would allow you to use this
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
-   public boolean sitting;   // Is the student sitting or standing (default sitting)                         
+    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
    
- //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
-   public String portraitFile; // image used when sitting
-   public String standingFile; // image used when standing
-   public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
-   Classroom clas = (Classroom) getWorld();
-   public void setRow(int r){
-       myRow=r;
-    }
+    //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
+    public String portraitFile; // image used when sitting
+    public String standingFile; // image used when standing
+    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
+    Classroom clas = (Classroom) getWorld();
+    
+  
+    
+    public void setRow(int r){
+        myRow=r;
+     }
     
     public void setSeat(int s){
        mySeat=s;
@@ -66,6 +69,13 @@ public abstract class Student extends Actor
         setImage(portraitFile);
         sitting=true;
     }
-        
- 
+    
+    public WhiteBoard getBoard(){
+        WhiteBoard b = getWorld().getObjects(WhiteBoard.class).get(0);//int points is the variable in this class where the points are saved;
+        return b;
+    }
+    public void moveToFront(){
+        setLocation(2,5);
+    }
+    
 }
