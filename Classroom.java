@@ -4,10 +4,10 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
- * Write a description of class Classroom here.
+ * This is the world where students sit in a classroom and perform and animation.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mark Owen Macasaet 
+ * @version 8/07/20
  */
 public class Classroom extends World
 {
@@ -35,9 +35,9 @@ public class Classroom extends World
         // Make sure to match your first and last name to the class file you created.
 
         /* Example */
-        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
-        addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();
+        MarkOwenMacasaet markowenmacasaet = new MarkOwenMacasaet("MarkOwen", "Macasaet", 10, 4);
+        addObject(markowenmacasaet, 1, 1);
+        markowenmacasaet.sitDown();
          
         
 
