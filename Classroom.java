@@ -8,8 +8,8 @@ import java.net.URI;
 /**
  * Write a description of class Classroom here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Arin Manohar 
+ * @version 1.0
  */
 public class Classroom extends World
 {
@@ -36,7 +36,7 @@ public class Classroom extends World
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and last name to the class file you created.
 
-        /* Example */
+        
         ArinManohar arinmanohar = new ArinManohar("Arin", "Manohar", 1, 1);
         addObject(arinmanohar, 1, 1);
         

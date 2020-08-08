@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
- * @author Mr. Kaehms
+ * @author Arin Manohar 
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
@@ -60,6 +60,8 @@ public class ArinManohar extends Student implements SpecialInterestOrHobby
     
     private void move()
     {
+        //creates random motion
+        
         for (int i=1;i<=19;i++){
             move(2);
             Greenfoot.delay(5);
@@ -96,13 +98,11 @@ public class ArinManohar extends Student implements SpecialInterestOrHobby
             
                 myHobby("I like to watch Gordon Ramsay");
                 NumberOfSiblings("I have no siblings");
-            // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
-            // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
-            // Call the sitDown() method to move back  to your seat
+            
             
                 move();
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                circleClass();  // Made modifications to this in the circleclass method, along with my own move() method
                 provideLesson();
                 sitDown();
             }
@@ -125,10 +125,7 @@ public class ArinManohar extends Student implements SpecialInterestOrHobby
         while (! sitting) {
         String q=Greenfoot.ask("Are you ready to start (yes/no)");
         if (q.contains("yes")){
-         // put in your lesson here - you can open up a browser for a screencast
-         // Create a blackboard image and write to it, etc
-         // Use an animated gif and dub over with audio - see "controls/show sound recoder"
-         // from main greenfoot menu for a simple to use soud editor
+         // opens a youtube link for our tutorial
           
             
             try {
@@ -140,8 +137,7 @@ public class ArinManohar extends Student implements SpecialInterestOrHobby
                   e.printStackTrace();
                 }
            
-        // You can end the lesson and "sitDown" once the lesson is complete, or once
-        // someone answers "yes" to the sitdown question
+            sitDown();
         }
         else {
           q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
@@ -161,6 +157,8 @@ public class ArinManohar extends Student implements SpecialInterestOrHobby
          * You should write your own methods to perform your own animation for your character/avatar.
          */
         public void circleClass(){
+        // non linear movement modification
+            
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
