@@ -125,7 +125,7 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
     }
     
     /**
-     * Starts the pacman/spongebob animation.
+     * Starts the pacman animation.
      */
     public void startAnimation() {
         chompSound.playLoop();
