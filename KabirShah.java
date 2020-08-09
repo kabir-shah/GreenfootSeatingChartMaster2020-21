@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.ArrayList;
 
 /**
  * I'm Kabir Shah
@@ -8,6 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSiblings, SpecialInterestOrHobby, StudentAthlete
 {
+    GreenfootImage pacmanImage0;
+    GreenfootImage pacmanImage1;
+    GreenfootSound chompSound;
+    ArrayList<Student> eatenStudents = new ArrayList<Student>();
 
     /**
      * Construct a KabirShah with a specific name and seat.
@@ -19,13 +24,17 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
         myRow = r;
         mySeat = s;
         
-        portraitFile = f.toLowerCase() + l.toLowerCase() + ".jpg";
+        portraitFile = firstName.toLowerCase() + lastName.toLowerCase() + ".jpg";
         standingFile = firstName.toLowerCase() + lastName.toLowerCase() + "-standing.jpg";
-        soundFile = f.toLowerCase() + l.toLowerCase() + ".wav";
+        pacmanImage0 = new GreenfootImage(firstName.toLowerCase() + lastName.toLowerCase() + "-standing-pacman-0.tiff");
+        pacmanImage1 = new GreenfootImage(firstName.toLowerCase() + lastName.toLowerCase() + "-standing-pacman-1.tiff");
+        soundFile = firstName.toLowerCase() + lastName.toLowerCase() + ".wav";
+        chompSound = new GreenfootSound(firstName.toLowerCase() + lastName.toLowerCase() + "-chomp.wav");
         
         sitting = true;
         
         setImage(portraitFile);
+        chompSound.setVolume(75);
     }
     
     /**
@@ -36,7 +45,7 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
        lastName = "Shah";
        
        myRow = 1;
-       mySeat = 1;
+       mySeat = 2;
        
        portraitFile = firstName.toLowerCase() + lastName.toLowerCase() + ".jpg";
        standingFile = firstName.toLowerCase() + lastName.toLowerCase() + "-standing.jpg";
@@ -97,33 +106,87 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
     }
     
     /**
+     * Does some pacman animations.
+     */
+    public void chomp() {
+        for (int i = 0; i < 2; i++) {
+            setImage(pacmanImage0);
+            Greenfoot.delay(10);
+            setImage(pacmanImage1);
+            Greenfoot.delay(10);
+        }
+        
+        Student student = (Student) getOneIntersectingObject(Student.class);
+        
+        if (student != null) {
+            student.getImage().setTransparency(0);
+            eatenStudents.add(student);
+        }
+    }
+    
+    /**
      * Starts the pacman/spongebob animation.
      */
     public void startAnimation() {
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
+        chompSound.playLoop();
+        
+        for (int i = 1; i < 3; i++) {
+            if (i % 2 == 0) {
+                for (int j = 8; j >= 1; j--) {
+                    setLocation(j, i);
+                    chomp();
+                }
+            } else {
+                for (int j = 1; j <= 8; j++) {
+                    setLocation(j, i);
+                    chomp();
+                }
+            }
+            
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
+        
+        for (int i = 0; i < eatenStudents.size(); i++) {
+            eatenStudents.get(i).getImage().setTransparency(255);
+        }
+        
+        eatenStudents = new ArrayList<Student>();
+        chompSound.stop();
+        setImage(standingFile);
+        returnToSeat();
+    }
+    
+    /**
+     * Answer any questions.
+     */
+    public void answerQuestion() {
+        while (!sitting) {
+            String answer = Greenfoot.ask("That's the lesson. Any questions? (y/n)");
+        
+            if (answer.contains("y")) {
+            } else {
+                sitDown();
+            }
+        }
+    }
+       
+    /**
+     * Start giving the loop group lesson.
+     */
+    public void provideLesson() {
+        while (!sitting) {
+            String answer = Greenfoot.ask("Start lesson? (y/n)");
+            
+            if (answer.contains("y")) {
+                bluej.utility.Utility.openWebBrowser("https://drive.google.com/file/d/1xE0wQSPAU1Ku_Fzbr64Y8EkrfhlJKMiO/view?usp=sharing%22");
+                answerQuestion();
+            } else {
+                answer = Greenfoot.ask("Alright then, can I sit down? (y/n)");
+        
+                if (answer.contains("y")) {
+                    sitDown();
+                }
+            }
+        }
     }
         
     /**
@@ -131,7 +194,7 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
      */
     public void act() {
         if (Greenfoot.mouseClicked(this)) {
-            sitting=false;
+            sitting = false;
             setImage(standingFile);
             
             System.out.println("");
@@ -142,9 +205,9 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
             myHobby("I like to play guitar.");
             mySport("I play soccer and lacrosse.");
             
+            Greenfoot.delay(100);
             startAnimation();
-            provideLesson();
-            sitDown();
+            //provideLesson();
         }
     }
 }
