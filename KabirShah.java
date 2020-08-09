@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * I'm Kabir Shah
@@ -25,16 +26,15 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
         mySeat = s;
         
         portraitFile = firstName.toLowerCase() + lastName.toLowerCase() + ".jpg";
-        standingFile = firstName.toLowerCase() + lastName.toLowerCase() + "-standing.jpg";
-        pacmanImage0 = new GreenfootImage(firstName.toLowerCase() + lastName.toLowerCase() + "-standing-pacman-0.tiff");
-        pacmanImage1 = new GreenfootImage(firstName.toLowerCase() + lastName.toLowerCase() + "-standing-pacman-1.tiff");
+        standingFile = firstName.toLowerCase() + lastName.toLowerCase() + "-standing.jpg"; 
         soundFile = firstName.toLowerCase() + lastName.toLowerCase() + ".wav";
         chompSound = new GreenfootSound(firstName.toLowerCase() + lastName.toLowerCase() + "-chomp.wav");
         
         sitting = true;
         
-        setImage(portraitFile);
+        resetImages();
         chompSound.setVolume(75);
+        setImage(portraitFile);
     }
 
     /**
@@ -97,21 +97,35 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
             Greenfoot.delay(10);
         }
         
-        Student student = (Student) getOneIntersectingObject(Student.class);
+        List<Student> students = (List<Student>) getIntersectingObjects(Student.class);
         
-        if (student != null) {
-            student.getImage().setTransparency(0);
-            eatenStudents.add(student);
+        for (Student student : students) {
+            if (student != null) {
+                student.getImage().setTransparency(0);
+                eatenStudents.add(student);
+            
+                pacmanImage0.scale(pacmanImage0.getWidth() + 3, pacmanImage0.getHeight() + 3);
+                pacmanImage1.scale(pacmanImage1.getWidth() + 3, pacmanImage1.getHeight() + 3);
+            }
         }
+    }
+    
+    /**
+     * Reset all pacman images.
+     */
+    public void resetImages() {
+        pacmanImage0 = new GreenfootImage(firstName.toLowerCase() + lastName.toLowerCase() + "-standing-pacman-0.tiff");
+        pacmanImage1 = new GreenfootImage(firstName.toLowerCase() + lastName.toLowerCase() + "-standing-pacman-1.tiff");
     }
     
     /**
      * Starts the pacman animation.
      */
     public void startAnimation() {
+        getWorld().setPaintOrder(KabirShah.class, Student.class);
         chompSound.playLoop();
         
-        for (int i = 1; i < 3; i++) {
+        for (int i = 1; i <= 3; i++) {
             if (i % 2 == 0) {
                 for (int j = 8; j >= 1; j--) {
                     setLocation(j, i);
@@ -124,13 +138,16 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
                 }
             }
             
+            pacmanImage0.mirrorHorizontally();
+            pacmanImage1.mirrorHorizontally();
         }
         
-        for (int i = 0; i < eatenStudents.size(); i++) {
-            eatenStudents.get(i).getImage().setTransparency(255);
+        for (Student eatenStudent : eatenStudents) {
+            eatenStudent.getImage().setTransparency(255);
         }
         
         eatenStudents = new ArrayList<Student>();
+        resetImages();
         chompSound.stop();
         setImage(standingFile);
         returnToSeat();
@@ -188,7 +205,7 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
             
             Greenfoot.delay(100);
             startAnimation();
-            //provideLesson();
+            provideLesson();
         }
     }
 }
