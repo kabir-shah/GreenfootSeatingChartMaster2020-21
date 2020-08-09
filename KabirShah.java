@@ -36,25 +36,6 @@ public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSib
         setImage(portraitFile);
         chompSound.setVolume(75);
     }
-    
-    /**
-     * Construct a default KabirShah with his actual name and seat.
-     */
-    public KabirShah() {
-       firstName = "Kabir";
-       lastName = "Shah";
-       
-       myRow = 1;
-       mySeat = 2;
-       
-       portraitFile = firstName.toLowerCase() + lastName.toLowerCase() + ".jpg";
-       standingFile = firstName.toLowerCase() + lastName.toLowerCase() + "-standing.jpg";
-       soundFile = firstName.toLowerCase() + lastName.toLowerCase() + ".wav";
-       
-       sitting = true;
-       
-       setImage(portraitFile);
-    }
 
     /**
      * Prints name to the console.
