@@ -11,6 +11,7 @@ AUTHORS:                    Mr. Kaehms and CSA students
 
 CONTRIBUTERS:               Kabir Shah
                             Oleg Bychenkov
+                            Shriya Rudrashetty
 
 USER INSTRUCTIONS:
 
