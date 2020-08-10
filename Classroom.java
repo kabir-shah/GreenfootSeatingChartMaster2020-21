@@ -50,6 +50,9 @@ public class Classroom extends World
         addObject(shriyarudrashetty, 1, 4);
         shriyarudrashetty.sitDown();
 
+        EllaDeGuzman elladeguzman = new EllaDeGuzman("Ella", "DeGuzman", 1, 5);
+        addObject(elladeguzman, 1, 5);
+        elladeguzman.sitDown();
 
     }
 }
