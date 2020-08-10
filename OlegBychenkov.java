@@ -5,8 +5,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * name, location, and image files. Special movement when clicked is moving
  * in random directions for 30 ticks.
  * 
- * @ author Oleg Bychenkov
- * @ version 1.0
+ * @author (your name)
+ * @version (a version number or a date)
  */
 public class OlegBychenkov extends Student implements SpecialInterestOrHobby, NumberOfSiblings, CSALearnedSoFar
 {
@@ -70,6 +70,7 @@ public class OlegBychenkov extends Student implements SpecialInterestOrHobby, Nu
             
             bounceAround();
             returnToSeat();
+            setRotation(360);
             provideLesson();
             sitDown();
         }

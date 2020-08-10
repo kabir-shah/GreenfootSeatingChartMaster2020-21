@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of interface NumberOfSiblings here.
  * 
- * @(your name) 
- * @(a version number or a date)
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public interface NumberOfSiblings 
 {

@@ -5,8 +5,8 @@ import java.util.ArrayList;
 /**
  * Sets the size of the world and creates the students
  * 
- * @Oleg Bychenkov 
- * @1.0 
+ * @author (your name)
+ * @version (a version number or a date)
  */
 public class Classroom extends World
 {

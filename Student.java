@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Sets the student location and methods like sitting down, returning to seat,
  * and giving the lesson.
  * 
- * @Oleg Bychenkov
- * @1.0
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public abstract class Student extends Actor
 {
@@ -54,7 +54,6 @@ public abstract class Student extends Actor
     
     public void returnToSeat(){
         setLocation(mySeat,myRow);
-        setRotation(360); //make the image face the proper direction when returning
     }
     public void sitDown(){
         returnToSeat();
