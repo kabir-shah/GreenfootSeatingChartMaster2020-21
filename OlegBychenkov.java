@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name)
  * @version (a version number or a date)
  */
-public class OlegBychenkov extends Student implements SpecialInterestOrHobby, NumberOfSiblings, CSALearnedSoFar
+public class OlegBychenkov extends LoopGroup implements SpecialInterestOrHobby, NumberOfSiblings, CSALearnedSoFar
 {
 
     /**
