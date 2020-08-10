@@ -66,7 +66,7 @@ public class WhiteBoard_ShreyaChandra extends Actor
             if(Greenfoot.mouseClicked(this)){            
                 slideNumber +=1;      
             }
-            addImage("slide" + slideNumber + ".jpg", 0, 0);
+            addImage("Arrayslide" + slideNumber + ".jpg", 0, 0);
         }
         if (slideNumber == 8) {
             finishSlide = true;    
@@ -76,13 +76,13 @@ public class WhiteBoard_ShreyaChandra extends Actor
         //returns previous slide when clicked
         if (slideNumber != 1) {
              slideNumber -=1;
-             addImage("slide" + slideNumber + ".jpg", 0, 0);
+             addImage("Arrayslide" + slideNumber + ".jpg", 0, 0);
         }
     }
     public void nextSlide(){
         //moves to next slide when clicked
         slideNumber +=1;
-        addImage("slide" + slideNumber + ".jpg", 0, 0);
+        addImage("Arrayslide" + slideNumber + ".jpg", 0, 0);
         
         if (slideNumber == 8) {
              finishSlide = true;

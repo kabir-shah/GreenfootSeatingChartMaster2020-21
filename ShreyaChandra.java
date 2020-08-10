@@ -98,7 +98,7 @@ public class ShreyaChandra extends Student implements SpecialInterestOrHobby, St
             getWorld().addObject(board, 5, 3);
             
             board.showBoard(); //shows board on screen
-            board.addImage("slide1.jpg", 0, 0); //adds first slide for lesson
+            board.addImage("Arrayslide1.jpg", 0, 0); //adds first slide for lesson
             Greenfoot.delay(10); //pauses
             while (board.finishSlide == false){
                 Greenfoot.delay(20); //pauses
