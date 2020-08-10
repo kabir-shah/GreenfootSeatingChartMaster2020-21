@@ -1,0 +1,35 @@
+[33mcommit c0a721b6f7f3914010380bf1f9ab68bc2110c0a3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: oleby0406 <oleg.bychenkov@gmail.com>
+Date:   Tue Jul 28 16:47:28 2020 -0700
+
+    first commit test
+
+[33mcommit 7e24dce8cfc62b9ff8541ceaae7f518feba3918a[m
+Author: MrKaehms <kaehmsrobert@dublinusd.org>
+Date:   Tue Jul 21 17:56:55 2020 -0700
+
+    modified Student.java to add an abstract method provideLesson that all groups need to implement
+
+[33mcommit 24d9591fedf01f5dc6b469cc5b5d6a74e8b23c40[m
+Author: MrKaehms <kaehmsrobert@dublinusd.org>
+Date:   Tue Jul 21 17:21:28 2020 -0700
+
+    Master Code, Initial commit
+
+[33mcommit e9ce075f364d06708b992f698c97d1f96d4001fc[m
+Author: Mr. Kaehms <kaehmsrobert@dublinusd.org>
+Date:   Tue Jul 21 17:17:44 2020 -0700
+
+    Update README.TXT
+
+[33mcommit d87dd9de0665a57b1887ab1a111c571e2b161eb1[m
+Author: Mr. Kaehms <kaehmsrobert@dublinusd.org>
+Date:   Tue Jul 21 17:16:07 2020 -0700
+
+    Create README.TXT
+
+[33mcommit e81f63c1262040ce3ae8cf6ffe84cf69ea5bb8d2[m
+Author: Mr. Kaehms <kaehmsrobert@dublinusd.org>
+Date:   Tue Jul 21 17:13:33 2020 -0700
+
+    Initial commit
