@@ -30,7 +30,6 @@ public class Classroom extends World
 
      private void prepare()
     {
-
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
@@ -55,5 +54,8 @@ public class Classroom extends World
         addObject(eeshanwalia, 1, 6);
         eeshanwalia.sitDown();
 
+        KaushalRamalingam kaushalramalingam = new KaushalRamalingam("Kaushal", "Ramalingam", 1, 7);
+        addObject(kaushalramalingam,1,7);
+        kaushalramalingam.sitDown();
     }
 }
