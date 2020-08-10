@@ -30,10 +30,7 @@ public class Classroom extends World
 
      private void prepare()
     {
-        // Add three lines to this doc with your class constructor and your row and seat number
-        // Make sure to match your first and last name to the class file you created.
 
-        /* Example */
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
@@ -53,6 +50,10 @@ public class Classroom extends World
         EllaDeGuzman elladeguzman = new EllaDeGuzman("Ella", "DeGuzman", 1, 5);
         addObject(elladeguzman, 1, 5);
         elladeguzman.sitDown();
+
+        EeshanWalia eeshanwalia = new EeshanWalia("Eeshan", "Walia", 1, 6);
+        addObject(eeshanwalia, 1, 6);
+        eeshanwalia.sitDown();
 
     }
 }
