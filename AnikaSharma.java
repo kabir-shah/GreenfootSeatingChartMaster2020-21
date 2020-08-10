@@ -98,7 +98,7 @@ public class AnikaSharma extends Student implements SpecialInterestOrHobby, Numb
             whiteboard_anikasharma board = new whiteboard_anikasharma ();
             getWorld().addObject(board, 5, 3);
             board.showBoard();
-            board.addImage("slide1.jpg", 0, 0);
+            board.addImage("Arrayslide1.jpg", 0, 0);
             Greenfoot.delay(10);
             System.out.println("Use arrow keys on keyboard to go back and forth");
             while (board.finishSlide == false){ // while reading slides, allow slides to change with arrow keys

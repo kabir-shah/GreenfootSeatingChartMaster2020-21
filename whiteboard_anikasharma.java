@@ -57,7 +57,7 @@ public class whiteboard_anikasharma extends Actor
     public void previousSlide(){
         if (slideNumber != 1) {
              slideNumber -=1;
-             addImage("slide" + slideNumber + ".jpg", 0, 0);
+             addImage("Arrayslide" + slideNumber + ".jpg", 0, 0);
         }
     }
     
@@ -70,7 +70,7 @@ public class whiteboard_anikasharma extends Actor
              finishSlide= true;
             return;
         }
-        addImage("slide" + slideNumber + ".jpg", 0, 0);
+        addImage("Arrayslide" + slideNumber + ".jpg", 0, 0);
     }
     
     public void eraseBoard() {
