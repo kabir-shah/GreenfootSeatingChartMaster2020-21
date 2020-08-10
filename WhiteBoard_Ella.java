@@ -61,12 +61,12 @@ public class WhiteBoard_Ella extends Actor
     public void previousSlide(){//function to change slide number to go back
         if (slideNumber != 1) {
              slideNumber -=1;
-             addImage("slide" + slideNumber + ".jpg", 0, 0);
+             addImage("Arrayslide" + slideNumber + ".jpg", 0, 0);
         }
     }
     public void nextSlide(){//function to change slide number to go forward
         slideNumber +=1;
-        addImage("slide" + slideNumber + ".jpg", 0, 0);
+        addImage("Arrayslide" + slideNumber + ".jpg", 0, 0);
         if (slideNumber == 8) {
              Greenfoot.delay(30);
              finishSlide= true;

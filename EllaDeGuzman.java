@@ -93,7 +93,7 @@ public class EllaDeGuzman extends Student implements SpecialInterestOrHobby, Stu
             getWorld().addObject(board, 5, 3);
             
             board.showBoard(); //makes board opaque
-            board.addImage("slide1.jpg", 0, 0); //adds the first slide
+            board.addImage("Arrayslide1.jpg", 0, 0); //adds the first slide
             Greenfoot.delay(10);
             while (board.finishSlide == false){ //checks if the lesson is on the last slide 
                 Greenfoot.delay(20);
