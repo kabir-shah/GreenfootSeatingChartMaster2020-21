@@ -34,28 +34,33 @@ public class Classroom extends World
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
 
-        KabirShah kabirShah = new KabirShah("Kabir", "Shah", 1, 2);
-        addObject(kabirShah, 1, 2);
+        KabirShah kabirShah = new KabirShah("Kabir", "Shah", 1, 1);
+        addObject(kabirShah, 1, 1);
         kabirShah.sitDown();
 
-        OlegBychenkov olegbychenkov = new OlegBychenkov("Oleg", "Bychenkov", 1, 3);
-        addObject(olegbychenkov, 1, 3);
+        OlegBychenkov olegbychenkov = new OlegBychenkov("Oleg", "Bychenkov", 1, 2);
+        addObject(olegbychenkov, 1, 2);
         olegbychenkov.sitDown();
 
-        ShriyaRudrashetty shriyarudrashetty = new ShriyaRudrashetty("Shriya", "Rudrashetty", 1, 4);
-        addObject(shriyarudrashetty, 1, 4);
+        ShriyaRudrashetty shriyarudrashetty = new ShriyaRudrashetty("Shriya", "Rudrashetty", 1, 3);
+        addObject(shriyarudrashetty, 1, 3);
         shriyarudrashetty.sitDown();
 
-        EllaDeGuzman elladeguzman = new EllaDeGuzman("Ella", "DeGuzman", 1, 5);
-        addObject(elladeguzman, 1, 5);
+        EllaDeGuzman elladeguzman = new EllaDeGuzman("Ella", "DeGuzman", 1, 4);
+        addObject(elladeguzman, 1, 4);
         elladeguzman.sitDown();
 
-        EeshanWalia eeshanwalia = new EeshanWalia("Eeshan", "Walia", 1, 6);
-        addObject(eeshanwalia, 1, 6);
+        EeshanWalia eeshanwalia = new EeshanWalia("Eeshan", "Walia", 1, 5);
+        addObject(eeshanwalia, 1, 5);
         eeshanwalia.sitDown();
 
-        KaushalRamalingam kaushalramalingam = new KaushalRamalingam("Kaushal", "Ramalingam", 1, 7);
-        addObject(kaushalramalingam,1,7);
+        KaushalRamalingam kaushalramalingam = new KaushalRamalingam("Kaushal", "Ramalingam", 1, 6);
+        addObject(kaushalramalingam,1,6);
         kaushalramalingam.sitDown();
+
+        AnishKolan anishKolan = new AnishKolan("Anish", "Kolan", 1, 7);
+        addObject(anishKolan, 1, 7);
+        anishKolan.sitDown();
+
     }
 }
