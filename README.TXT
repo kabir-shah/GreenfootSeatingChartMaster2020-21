@@ -16,6 +16,7 @@ CONTRIBUTERS:               Kabir Shah
                             Eeshan Walia
                             Anish Kolan
                             Shaan Mathur
+                            Jenny Wang
 
 USER INSTRUCTIONS:
 
