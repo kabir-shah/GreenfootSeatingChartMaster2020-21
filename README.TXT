@@ -15,6 +15,7 @@ CONTRIBUTERS:               Kabir Shah
                             Ella DeGuzman
                             Eeshan Walia
                             Anish Kolan
+                            Shaan Mathur
 
 USER INSTRUCTIONS:
 
