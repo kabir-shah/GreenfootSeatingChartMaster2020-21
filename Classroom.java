@@ -81,5 +81,9 @@ public class Classroom extends World
         AnikaSharma anikasharma = new AnikaSharma("Anika", "Sharma", 2, 4);
         addObject(anikasharma, 2, 4);
         anikasharma.sitDown();
+
+        ShreyaChandra shreyachandra = new ShreyaChandra("Shreya", "Chandra", 2, 5);
+        addObject(shreyachandra, 2, 5);
+        shreyachandra.sitDown();
     }
 }

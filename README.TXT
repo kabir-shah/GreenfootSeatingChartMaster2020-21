@@ -19,6 +19,7 @@ CONTRIBUTERS:               Kabir Shah
                             Jenny Wang
                             Grace Liu
                             Anika Sharma
+                            Shreya Chandra
 
 USER INSTRUCTIONS:
 
