@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of interface StudentAthlete here.
+ * The interface StudentAthlete creates a sentence about the student's athletics.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karen Zhao 
+ * @version August 10, 2020
  */
 public interface StudentAthlete 
 {

@@ -20,6 +20,7 @@ CONTRIBUTERS:               Kabir Shah
                             Grace Liu
                             Anika Sharma
                             Shreya Chandra
+                            Karen Zhao
 
 USER INSTRUCTIONS:
 

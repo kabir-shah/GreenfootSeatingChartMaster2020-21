@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of interface NumberOfSiblings here.
+ * The interface NumberOfSiblings creates public intergers.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karen Zhao
+ * @version August 10, 2020
  */
 public interface NumberOfSiblings 
 {
@@ -13,5 +13,4 @@ public interface NumberOfSiblings
     public int numberOfSiblings();
     public int numberOfBrothers();
     public int numberOfSisters();
-    
 }

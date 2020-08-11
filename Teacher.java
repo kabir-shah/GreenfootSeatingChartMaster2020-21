@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Teacher here.
+ * The Teacher class sets up the name and seat of the teacher in the classroom.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karen Zhao
+ * @version August 10, 2020
  */
 public abstract class Teacher extends Actor
 {
