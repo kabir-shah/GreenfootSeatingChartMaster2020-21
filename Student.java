@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Write a description of class Student here.
+ * The Student class sets up the student's introduction.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karen Zhao 
+ * @version August 10, 2020
  */
 public abstract class Student extends Actor
 {
@@ -67,5 +67,4 @@ public abstract class Student extends Actor
         sitting=true;
     }
         
- 
 }

@@ -1,17 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BobKaehms here.
+ * Introduces the teacher Mr. Kaehms.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karen Zhao 
+ * @version August 10, 2020
  */
 public class MrKaehms extends Teacher //implements JustForFun
-{
-    
-
-   
-    
+{ 
     public MrKaehms () {
 
     setLocation(mySeat,myRow);

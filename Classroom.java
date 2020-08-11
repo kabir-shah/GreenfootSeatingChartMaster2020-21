@@ -4,10 +4,10 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
- * Write a description of class Classroom here.
+ * Sets the size of the classroom and the location of the objects placed in it.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karen Zhao 
+ * @version August 10, 2020
  */
 public class Classroom extends World
 {
@@ -38,7 +38,7 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
-        
+         
         KarenZhao karenzhao = new KarenZhao("Karen", "Zhao", 3, 3);
         addObject(karenzhao, 3, 3);
         karenzhao.sitDown();

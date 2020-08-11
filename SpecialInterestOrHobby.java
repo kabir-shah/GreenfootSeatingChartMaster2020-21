@@ -1,8 +1,8 @@
 /**
- * Write a description of interface SpecialInterestOrHobby here.
+ * The interface SpecialInterestOrHobby prints a sentence about the student's hobbies/interests.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karen Zhao
+ * @version August 10, 2020
  */
 public interface SpecialInterestOrHobby  
 {
