@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Mr. Kaehms and modified by Shaan Mathur
  * @version 08/07/20
  */
-public class ShaanMathur extends Student implements NumberOfSiblings, SpecialInterestOrHobby, StudentAthlete
+public class ShaanMathur extends LoopGroup implements NumberOfSiblings, SpecialInterestOrHobby, StudentAthlete
 {
 
     /**
