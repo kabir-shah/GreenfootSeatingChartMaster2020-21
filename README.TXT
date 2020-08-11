@@ -18,6 +18,7 @@ CONTRIBUTERS:               Kabir Shah
                             Shaan Mathur
                             Jenny Wang
                             Grace Liu
+                            Anika Sharma
 
 USER INSTRUCTIONS:
 

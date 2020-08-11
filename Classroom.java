@@ -77,5 +77,9 @@ public class Classroom extends World
         GraceLiu graceliu = new GraceLiu("Grace", "Liu", 2, 3);
         addObject(graceliu, 2, 3);
         graceliu.sitDown();
+
+        AnikaSharma anikasharma = new AnikaSharma("Anika", "Sharma", 2, 4);
+        addObject(anikasharma, 2, 4);
+        anikasharma.sitDown();
     }
 }
