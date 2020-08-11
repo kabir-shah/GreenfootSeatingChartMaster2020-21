@@ -73,5 +73,9 @@ public class Classroom extends World
         JennyWang jennywang = new JennyWang("Jenny", "Wang", 2, 2);
         addObject(jennywang, 2, 2);
         jennywang.sitDown();
+
+        GraceLiu graceliu = new GraceLiu("Grace", "Liu", 2, 3);
+        addObject(graceliu, 2, 3);
+        graceliu.sitDown();
     }
 }
