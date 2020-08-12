@@ -65,6 +65,7 @@ public abstract class Student extends Actor
         returnToSeat();
         setImage(portraitFile);
         sitting=true;
+        setRotation(0);
     }
         
  
