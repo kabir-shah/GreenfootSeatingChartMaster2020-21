@@ -11,7 +11,7 @@ AUTHORS:                    Mr. Kaehms and CSA students
 
 CONTRIBUTERS:               Kilgore Trout
                             (Add you name here once your code 
-                            is added and correct)
+                             is added and correct)
 
 USER INSTRUCTIONS:
 
