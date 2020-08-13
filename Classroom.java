@@ -89,5 +89,9 @@ public class Classroom extends World
         KarenZhao karenzhao = new KarenZhao("Karen", "Zhao", 2, 6);
         addObject(karenzhao, 2, 6);
         karenzhao.sitDown();
+
+        TameemSaydi tameemsaydi = new TameemSaydi("Tameem", "Saydi", 2, 7);
+        addObject(tameemsaydi, 2, 7);
+        tameemsaydi.sitDown();
     }
 }

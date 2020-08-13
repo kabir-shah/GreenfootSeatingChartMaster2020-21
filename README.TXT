@@ -21,6 +21,7 @@ CONTRIBUTERS:               Kabir Shah
                             Anika Sharma
                             Shreya Chandra
                             Karen Zhao
+                            Tameem Saydi
 
 USER INSTRUCTIONS:
 
