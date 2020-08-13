@@ -15,6 +15,7 @@ CONTRIBUTERS:               Kabir Shah
                             Ella DeGuzman
                             Eeshan Walia
                             Anish Kolan
+                            Anshul Kashyap
                             Shaan Mathur
                             Jenny Wang
                             Grace Liu
