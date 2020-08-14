@@ -1,12 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+mport greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * This class contains the animation for the student when the user runs the
- * program
- * 
- * Kaushik Pendiyala 
- * Version 1.0
- * August 7, 2020
+ * The Student class sets up the student's introduction.
+ *
+ * @author Period 3
+ * @version 1.0
  */
 public abstract class Student extends Actor
 {
@@ -18,21 +16,25 @@ public abstract class Student extends Actor
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
-   public boolean sitting;   // Is the student sitting or standing (default sitting)                         
-   
+   public boolean sitting;   // Is the student sitting or standing (default sitting)
+
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
-   public String soundFile; //firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
+   public String standingFile2;
+   public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
+   public String dancingFile;
+   public String soundDanceFile;
+   public String soundFileAYR;
    Classroom clas = (Classroom) getWorld();
    public void setRow(int r){
        myRow=r;
     }
-    
+
     public void setSeat(int s){
        mySeat=s;
     }
-    
+
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
                                      // in your own class file. See KilgoreTrout for an example
     public abstract void  provideLesson(); // each group should implement their own version of this method.
@@ -42,24 +44,32 @@ public abstract class Student extends Actor
                                             // implement methods that would discuss the summer homework lessons.  This year
                                             // you will work in teams of 3 to figure out some way to actually give a short
                                             // Runestone lesson.
-    
+
     /**
      * Plays a sound file when called
      * @param String myNameFile  is the name of the sound file to play, ex "mySound.wav",
      */
-    
+
     public int GetRow(){
         return myRow;
     }
-    
+
     public int GetSeat(){
         return mySeat;
     }
-    
+
     public void sayName(String myNameFile){
         Greenfoot.playSound(myNameFile);
     }
-    
+
+    public void sayAreYouReady (String mySoundFile) {
+        Greenfoot.playSound(mySoundFile);
+    }
+
+    public void sayDance (String myDanceFile) {
+        Greenfoot.playSound(myDanceFile);
+    }
+
     public void returnToSeat(){
         setLocation(mySeat,myRow);
     }
@@ -68,6 +78,5 @@ public abstract class Student extends Actor
         setImage(portraitFile);
         sitting=true;
     }
-        
- 
+
 }
