@@ -105,5 +105,9 @@ public class Classroom extends World
         AkhilGiridhar akhilgiridhar = new AkhilGiridhar("Akhil", "Giridhar", 3, 3);
         addObject(akhilgiridhar, 3, 3);
         akhilgiridhar.sitDown();
+        
+        AnshulKashyap anshulkashyap = new AnshulKashyap("Anshul", "Kashyap", 3, 4);
+        addObject(anshulkashyap, 3, 4);
+        anshulkashyap.sitDown();
     }
 }
