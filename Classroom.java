@@ -29,9 +29,6 @@ public class Classroom extends World
 
      private void prepare()
     {
-        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
-        addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();
 
         KabirShah kabirShah = new KabirShah("Kabir", "Shah", 1, 1);
         addObject(kabirShah, 1, 1);
@@ -104,5 +101,9 @@ public class Classroom extends World
         RohanGovindarajan rohangovindarajan = new RohanGovindarajan("rohan", "govindarajan", 3, 2);
         addObject(rohangovindarajan, 3, 2);
         rohangovindarajan.sitDown();
+        
+        AkhilGiridhar akhilgiridhar = new AkhilGiridhar("Akhil", "Giridhar", 3, 3);
+        addObject(akhilgiridhar, 3, 3);
+        akhilgiridhar.sitDown();
     }
 }
