@@ -97,5 +97,9 @@ public class Classroom extends World
         KaushikPendiyala kaushikpendiyala = new KaushikPendiyala("Kaushik", "Pendiyala", 2, 8);
         addObject(kaushikpendiyala, 2, 8);
         kaushikpendiyala.sitDown();
+        
+        MarkOwenMacasaet markowenmacasaet = new MarkOwenMacasaet("MarkOwen", "Macasaet", 3, 1);
+        addObject(markowenmacasaet, 3, 1);
+        markowenmacasaet.sitDown();
     }
 }
