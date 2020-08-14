@@ -1,4 +1,3 @@
-
 PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
 PURPOSE OF PROJECT: The purpose of this assignment is to visually work with classes and subclasses, abstract classes, and interfaces, and to familiarize yourself with the basics of the GIT command line.  As a side effect, it will help your instructor learn your names!
@@ -9,8 +8,24 @@ HOW TO START THIS PROJECT:  To start this project, assuming that you have Greenf
 
 AUTHORS:                    Mr. Kaehms and CSA students
 
-CONTRIBUTERS:               Kilgore Trout
-                            Akhil Giridhar
+CONTRIBUTERS:               Kabir Shah
+                            Oleg Bychenkov
+                            Shriya Rudrashetty
+                            Ella DeGuzman
+                            Eeshan Walia
+                            Anish Kolan
+                            Anshul Kashyap
+                            Shaan Mathur
+                            Jenny Wang
+                            Grace Liu
+                            Anika Sharma
+                            Shreya Chandra
+                            Karen Zhao
+                            Tameem Saydi
+                            Kaushik Pendiyala
+                            Mark Owen Macasaet
+                            Rohan Govindarajan
+                            Akhil Giridar
 
 USER INSTRUCTIONS:
 
@@ -45,4 +60,3 @@ git status
 git commit -m “adding my files to the repository”
 
 8) Push your changes to the remote repository:
-
