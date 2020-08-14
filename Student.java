@@ -8,12 +8,12 @@ import java.util.ArrayList;
  */
 public abstract class Student extends Actor
 {
-   //Instance variables
-   public String firstName;
-   public String lastName;
-   public int myRow;         // rows start in the front of class (1), and end in the back of class
-   public int mySeat;        // seats are left to right, 1-8
-   public boolean isActive;  // can you think of an algorithm that would allow you to use this
+     //Instance variables
+    public String firstName;
+    public String lastName;
+    public int myRow;         // rows start in the front of class (1), and end in the back of class
+    public int mySeat;        // seats are left to right, 1-8
+    public boolean isActive;  // can you think of an algorithm that would allow you to use this
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
 
@@ -32,7 +32,6 @@ public abstract class Student extends Actor
    public void setRow(int r){
        myRow=r;
     }
-
     public void setSeat(int s){
        mySeat=s;
     }

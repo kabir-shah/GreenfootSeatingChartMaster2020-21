@@ -22,6 +22,4 @@ public abstract class Teacher extends Actor
     public void sitDown(){
         setLocation(mySeat,myRow);
     }
-
-
 }

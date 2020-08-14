@@ -1,7 +1,6 @@
 import java.util.*;
 import greenfoot.*;
 import java.util.ArrayList;
-
 /**
  * Sets the size of the world and creates the students
  *
@@ -18,11 +17,11 @@ public class Classroom extends World
     public Classroom()
     {
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
+        
         super(10, 6, 130);
 
         prepare();
     }
-
     /**
      * Prepare the world for the start of the program. That is: create the initial
      * objects and add them to the world.
@@ -101,5 +100,9 @@ public class Classroom extends World
         MarkOwenMacasaet markowenmacasaet = new MarkOwenMacasaet("MarkOwen", "Macasaet", 3, 1);
         addObject(markowenmacasaet, 3, 1);
         markowenmacasaet.sitDown();
+        
+        RohanGovindarajan rohangovindarajan = new RohanGovindarajan("rohan", "govindarajan", 3, 2);
+        addObject(rohangovindarajan, 3, 2);
+        rohangovindarajan.sitDown();
     }
 }
