@@ -23,6 +23,7 @@ CONTRIBUTERS:               Kabir Shah
                             Shreya Chandra
                             Karen Zhao
                             Tameem Saydi
+                            Kaushik Pendiyala
 
 USER INSTRUCTIONS:
 

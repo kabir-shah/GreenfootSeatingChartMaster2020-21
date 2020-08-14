@@ -93,5 +93,9 @@ public class Classroom extends World
         TameemSaydi tameemsaydi = new TameemSaydi("Tameem", "Saydi", 2, 7);
         addObject(tameemsaydi, 2, 7);
         tameemsaydi.sitDown();
+
+        KaushikPendiyala kaushikpendiyala = new KaushikPendiyala("Kaushik", "Pendiyala", 2, 8);
+        addObject(kaushikpendiyala, 2, 8);
+        kaushikpendiyala.sitDown();
     }
 }
