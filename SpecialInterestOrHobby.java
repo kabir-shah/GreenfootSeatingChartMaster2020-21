@@ -1,13 +1,13 @@
 /**
- * Write a description of interface SpecialInterestOrHobby here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The interface SpecialInterestOrHobby prints a sentence about the student's hobbies/interests.
+ *
+ * @author Period 3
+ * @version 1.0
  */
-public interface SpecialInterestOrHobby  
+public interface SpecialInterestOrHobby
 {
     // method signatures - implement the signature below in your own class. Make sure to
     //                     match the parameter list and return type
-    
+
     public void myHobby(String myHobbySentence);
 }
