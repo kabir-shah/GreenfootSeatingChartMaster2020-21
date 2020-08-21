@@ -95,6 +95,7 @@ public class RohanGovindarajan extends Student implements SpecialInterestOrHobby
      * classes, make sure to fully document so other students can use the same interface.
      */
     public void provideLesson(){
+        /* BROKEN
         while (! sitting) {
         String q=Greenfoot.ask("Are you ready to start (yes/no)");
         if (q.contains("yes")){
@@ -121,7 +122,7 @@ public class RohanGovindarajan extends Student implements SpecialInterestOrHobby
             Greenfoot.delay(10);
             sitDown();
         }
-       }        
+       } */       
     }
     
     public void answerQuestion(){
