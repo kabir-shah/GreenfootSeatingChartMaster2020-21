@@ -1,6 +1,5 @@
 #Greenfoot project file
 class.Classroom.image=csa.jpg
-class.JustinFok.image=man01.png
 class.MrKaehms.image=MrKaehms.jpg
 dependency1.from=Classroom
 dependency1.to=JustinFok
@@ -87,12 +86,11 @@ target6.x=10
 target6.y=420
 target7.height=50
 target7.name=JustinFok
-target7.naviview.expanded=true
 target7.showInterface=false
 target7.type=ClassTarget
-target7.width=90
-target7.x=160
-target7.y=300
+target7.width=80
+target7.x=0
+target7.y=0
 target8.height=50
 target8.name=NumberOfSiblings
 target8.naviview.expanded=true
