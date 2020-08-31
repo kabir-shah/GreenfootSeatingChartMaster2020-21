@@ -17,7 +17,7 @@ public class Classroom extends World
     public Classroom()
     {
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
-        
+
         super(10, 6, 130);
 
         prepare();
@@ -29,7 +29,6 @@ public class Classroom extends World
 
      private void prepare()
     {
-
         KabirShah kabirShah = new KabirShah("Kabir", "Shah", 1, 1);
         addObject(kabirShah, 1, 1);
         kabirShah.sitDown();
@@ -93,21 +92,25 @@ public class Classroom extends World
         KaushikPendiyala kaushikpendiyala = new KaushikPendiyala("Kaushik", "Pendiyala", 2, 8);
         addObject(kaushikpendiyala, 2, 8);
         kaushikpendiyala.sitDown();
-        
+
         MarkOwenMacasaet markowenmacasaet = new MarkOwenMacasaet("MarkOwen", "Macasaet", 3, 1);
         addObject(markowenmacasaet, 3, 1);
         markowenmacasaet.sitDown();
-        
+
         RohanGovindarajan rohangovindarajan = new RohanGovindarajan("rohan", "govindarajan", 3, 2);
         addObject(rohangovindarajan, 3, 2);
         rohangovindarajan.sitDown();
-        
+
         AkhilGiridhar akhilgiridhar = new AkhilGiridhar("Akhil", "Giridhar", 3, 3);
         addObject(akhilgiridhar, 3, 3);
         akhilgiridhar.sitDown();
-        
+
         AnshulKashyap anshulkashyap = new AnshulKashyap("Anshul", "Kashyap", 3, 4);
         addObject(anshulkashyap, 3, 4);
         anshulkashyap.sitDown();
+
+        JustinFok justinfok = new JustinFok("Justin", "Fok", 3, 5);
+        addObject(justinfok, 3, 5);
+        justinfok.sitDown();
     }
 }

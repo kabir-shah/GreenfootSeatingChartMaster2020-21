@@ -26,6 +26,7 @@ CONTRIBUTERS:               Kabir Shah
                             Mark Owen Macasaet
                             Rohan Govindarajan
                             Akhil Giridar
+                            Justin Fok
 
 USER INSTRUCTIONS:
 
