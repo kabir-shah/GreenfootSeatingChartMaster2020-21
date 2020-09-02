@@ -1,5 +1,5 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
@@ -7,8 +7,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class KilgoreTrout extends Student implements SpecialInterestOrHobby
+ /**public class KilgoreTrout extends Student implements SpecialInterestOrHobby
+/**
 {
+    private GreenfootImage board;
+    private GreenfootImage text1;
+
 
     /**
      * Constructor for the KilgoreTrout class.
@@ -22,7 +26,10 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
+
+    /**
     public KilgoreTrout(String f, String l, int r, int s) {
+       
         firstName=f;
         lastName=l;
         myRow=r;
@@ -38,50 +45,55 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public KilgoreTrout() {
+/**    public KilgoreTrout() {
         firstName="Kilgore";
         lastName="Trout";
         myRow=1;
         mySeat=1;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+        
+
+
     }
     
-     /**
+    /**
      * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
-    public void act() 
+  /**  public void act() 
     {
-        // Add your action code here.
-        if(Greenfoot.mouseClicked(this)){
-          //  if (sitting){
+         // Add your action code here.
+         if(Greenfoot.mouseClicked(this)){
+                //  if (sitting){
+                getWorld().setBackground("csa.jpg");
                 sitting=false;
                 setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
-            
+           
                 myHobby("I like to time travel!");
-            // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
-            // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
-            // Call the sitDown() method to move back  to your seat
-            
+                // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a
+                // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
+                // Call the sitDown() method to move back  to your seat
+           
                 circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
                 provideLesson();
-                sitDown();
+                 getWorld().setBackground("csa.jpg");
+                 sitDown();
             }
-        
-    } 
+        }
+   
     
     /**
      * Prints the first and last name to the console
      */
-    public void getName(){
+ /**   public void getName(){
         System.out.println("My name is " + firstName + " " + lastName);
     }
     /**
@@ -90,7 +102,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
      * classes, make sure to fully document so other students can use the same interface.
      */
-    public void provideLesson(){
+ /**   public void provideLesson(){
         while (! sitting) {
         String q=Greenfoot.ask("Are you ready to start (yes/no)");
         if (q.contains("yes")){
@@ -102,25 +114,32 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
          
         // You can end the lesson and "sitDown" once the lesson is complete, or once
         // someone answers "yes" to the sitdown question
+        WhiteBoard board=getBoard();
+        board.showBoard();
+        moveToFront();
+        String nextSlide=q=Greenfoot.ask("Next Slide (y/n)");
         }
         else {
-          q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
+          WhiteBoard board = getBoard();
+          board.showBoard();
+          moveToFront();
+            q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
         }
          if (q.equals("yes")){
             Greenfoot.delay(10);
             sitDown();
         }
+       }        
     }
-        
-    }
+    
     public void answerQuestion(){
-        // may not need
+        // may not need 
     }
     /**
      * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
+ /**  public void circleClass(){
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
@@ -142,17 +161,20 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
         for (int i=5;i>=0;i--){
             setLocation(0,i);
             Greenfoot.delay(10);
-        }   
+        }
            Greenfoot.delay(20);
            returnToSeat();
     }
-     /**
+    /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
      * tests on abstract classes and interfaces, but it is good to know about them
      */
-     public void myHobby(String s) {
+ /**  public void myHobby(String s) {
          System.out.println(s);
+    }
+ 
+   */ 
+  /**
 }
-
-}
+*/
