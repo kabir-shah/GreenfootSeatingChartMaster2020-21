@@ -64,7 +64,7 @@ public class Classroom extends World
         ShaanMathur shaanmathur = new ShaanMathur("Shaan", "Mathur", 2, 1);
         addObject(shaanmathur, 2, 1);
         shaanmathur.sitDown();
-
+        
         JennyWang jennywang = new JennyWang("Jenny", "Wang", 2, 2);
         addObject(jennywang, 2, 2);
         jennywang.sitDown();
@@ -112,5 +112,9 @@ public class Classroom extends World
         JustinFok justinfok = new JustinFok("Justin", "Fok", 3, 5);
         addObject(justinfok, 3, 5);
         justinfok.sitDown();
+        
+        AaryaDharm aaryadharm = new AaryaDharm("Aarya", "Dharm", 3, 6);
+        addObject(aaryadharm, 3, 6);
+        aaryadharm.sitDown();
     }
 }
